@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Base Color and Font Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-kanit);           /* ใช้ Kanit เป็นฟอนต์หลัก */
+  --font-comfortaa: var(--font-comfortaa);  /* ใช้เฉพาะในบางจุด */
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1b1b1b;
+    --foreground: #ededed;
+  }
+}
+
+/* Global Body Styling */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-kanit), sans-serif;
+}
