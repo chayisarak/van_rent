@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Base Color and Font Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-kanit);
+  --font-comfortaa: var(--font-comfortaa);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;  /* พื้นหลังหลักตอนมืด */
+    --foreground: #e5e7eb;
+  }
+
+  body {
+    /* สดใสแต่เข้มสำหรับ Dark mode */
+    background:
+      radial-gradient(circle at 78% 22%, #60a5fa 0%, transparent 42%),
+      radial-gradient(circle at 18% 86%, #f472b6 0%, transparent 42%),
+      linear-gradient(120deg, #0f172a 0%, #1e293b 55%, #334155 100%);
+    color: var(--foreground);
+  }
+}
+
+/* Global Body Styling - Light Mode สดใส */
+body {
+  /* ไล่เฉดสดใส + วงกลมซ้อน */
+  background:
+    radial-gradient(circle at 80% 20%, #93c5fd 0%, transparent 40%), /* ฟ้าอ่อน */
+    radial-gradient(circle at 20% 80%, #fcd34d 0%, transparent 40%), /* เหลืองสด */
+    linear-gradient(120deg, #fbcfe8 0%, #fde68a 50%, #a5f3fc 100%);  /* ชมพู → เหลือง → ฟ้า */
+  color: var(--foreground);
+  font-family: var(--font-kanit), sans-serif;
+  min-height: 100vh;
+  transition: background 0.5s;
+}
