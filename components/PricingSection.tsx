@@ -5,7 +5,7 @@ export default function PricingSection() {
   return (
     <section id="pricing" className="bg-white py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-center font-kanit text-3xl font-bold text-blue-800 mb-10">
+        <h2 className="text-center font-kanit text-3xl font-bold text-blue-800 mb-10" data-th="💰 อัตราค่าบริการ" data-en="💰 Price">
           💰 อัตราค่าบริการ
         </h2>
 
@@ -19,17 +19,30 @@ export default function PricingSection() {
             </div>
             <ul className="list-disc list-inside space-y-1 text-gray-700">
               <li>
-                ค่าบริการเริ่มต้นที่ <span className="font-bold text-red-600">1,800 – 2,500 บาทต่อวัน</span>
+                <span data-th="ค่าบริการเริ่มต้นที่" data-en="Starting service fee at"></span>
+                <span className="font-bold text-red-600"> 1,800 – 2,500 </span>
+                <span data-th="บาทต่อวัน" data-en="THB per day"></span>
               </li>
+              
               <li>
-                ระยะเวลาให้บริการ <span className="font-semibold">สูงสุด 10–12 ชั่วโมงต่อวัน</span>
+                <span data-th="ระยะเวลาให้บริการ" data-en="Service duration"></span>
+                <span data-th="สูงสุด" data-en="Up to"></span>
+                <span className="font-bold text-red-600"> 10–12 </span>
+                <span data-th="ชั่วโมงต่อวัน" data-en="hours per day"></span>
               </li>
+
               <li>
-                กรณีเกินเวลาที่กำหนด คิดค่าบริการเพิ่มเติม <span className="text-blue-700">200 บาทต่อชั่วโมง</span>
+                <span data-th="กรณีเกินเวลาที่กำหนด คิดค่าบริการเพิ่มเติม" data-en="In case of overtime, additional fee applies"></span>
+                <span className="text-blue-700"> 200 </span>
+                <span data-th="บาทต่อชั่วโมง" data-en="THB per hour"></span>
               </li>
+
               <li>
-                หากไม่ได้จัดเตรียมที่พักสำหรับพนักงานขับรถ ขอความกรุณาชำระ <span className="text-blue-700">ค่าที่พัก 500 บาทต่อคืน</span>
+                <span data-th="หากไม่ได้จัดเตรียมที่พักสำหรับพนักงานขับรถ ขอความกรุณาชำระ" data-en="If accommodation is not provided for the driver, please pay"></span>
+                <span className="text-blue-700"> 500 </span>
+                <span data-th="บาทต่อคืน" data-en="THB per night"></span>
               </li>
+
             </ul>
           </div>
 
@@ -41,19 +54,37 @@ export default function PricingSection() {
             </div>
             <ul className="list-disc list-inside space-y-1 text-gray-700">
               <li>
-                ค่าบริการเริ่มต้นที่ <span className="font-bold text-red-600">6,000 บาทต่อวัน</span>
+                <span data-th="ค่าบริการเริ่มต้นที่" data-en="Starting service fee at"></span>
+                <span className="font-bold text-red-600"> 6,000 </span>
+                <span data-th="บาทต่อวัน" data-en="THB per day"></span>
+
+              </li>
+
+              <li>
+                <span data-th="*ราคาดังกล่าว" data-en="*The above price"></span>
+                <strong data-th="ไม่รวม" data-en=" does not include "></strong>
+                <span data-th="ค่าน้ำมันและค่าทางด่วน" data-en="fuel and toll fees"></span>
+              </li>
+
+              <li>
+                <span data-th="ระยะเวลาให้บริการ" data-en="Service duration"></span>
+                <span data-th="สูงสุด" data-en="Up to"></span>
+                <span className="font-semibold"> 10–12 </span>
+                <span data-th="ชั่วโมงต่อวัน" data-en="hours per day"></span>
+
               </li>
               <li>
-                *ราคาดังกล่าว<strong>ไม่รวม</strong>ค่าน้ำมันและค่าทางด่วน
+                <span data-th="กรณีเกินเวลาที่กำหนด คิดค่าบริการเพิ่มเติม" data-en="In case of overtime, an additional fee applies"></span>
+                <span className="text-blue-700"> 200 </span>
+                <span data-th="บาทต่อชั่วโมง" data-en="THB per hour"></span>
               </li>
+
               <li>
-                ระยะเวลาให้บริการ <span className="font-semibold">สูงสุด 10–12 ชั่วโมงต่อวัน</span>
-              </li>
-              <li>
-                กรณีเกินเวลาที่กำหนด คิดค่าบริการเพิ่มเติม <span className="text-blue-700">200 บาทต่อชั่วโมง</span>
-              </li>
-              <li>
-                หากไม่ได้จัดเตรียมที่พักสำหรับพนักงานขับรถ ขอความกรุณาชำระ <span className="text-blue-700">ค่าที่พัก 500 บาทต่อคืน</span>
+                <span data-th="หากไม่ได้จัดเตรียมที่พักสำหรับพนักงานขับรถ ขอความกรุณาชำระ" data-en="If accommodation is not provided for the driver, please pay"></span>
+                <span data-th="ค่าที่พัก" data-en="accommodation fee"></span>
+                <span className="text-blue-700"> 500 </span>
+                <span data-th="บาทต่อคืน" data-en="THB per night"></span>
+
               </li>
             </ul>
           </div>
