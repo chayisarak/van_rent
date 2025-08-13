@@ -1,36 +1,20 @@
-//layout.tsx
-
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-
 import { Comfortaa, Kanit } from "next/font/google";
 
 const comfortaa = Comfortaa({
   subsets: ["latin"],
   variable: "--font-comfortaa",
   weight: ["400", "500", "700"],
-  style: ['normal'], // หรือเพิ่มได้ตามที่ใช้
+  style: ["normal"],
 });
 
 const kanit = Kanit({
   subsets: ["thai", "latin"],
   variable: "--font-kanit",
   weight: ["400", "500", "700"],
-  style: ['normal', 'italic'],
+  style: ["normal", "italic"],
 });
-
 
 export const metadata: Metadata = {
   title: "Khong Van Transport",
@@ -39,12 +23,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${kanit.variable} ${comfortaa.variable}  font-sans`}>
+      {/* สำคัญ: อย่าใส่ class bg-* บน body เพื่อไม่ให้ทับ gradient จาก globals.css */}
+      <body className={`${kanit.variable} ${comfortaa.variable} font-sans antialiased min-h-screen`}>
         {children}
       </body>
     </html>
