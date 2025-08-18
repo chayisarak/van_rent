@@ -54,7 +54,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* โลโก้ + ชื่อบริษัท */}
           <div className="flex items-center gap-4 shrink-0">
-            <img src="/images/logo_van.png" alt="Van Logo" className="h-14 md:h-19" />
+            <img src="/images/logo_van1.png" alt="Van Logo" className="h-14 md:h-19" />
             <span className="text-lg md:text-xl font-bold tracking-wide">Khong Van 
             </span>
           </div>
@@ -149,8 +149,8 @@ export default function Home() {
           >
             <FaLine /> แอด LINE
           </a>
-          <a
-            href="https://www.facebook.com/share/p/16X2EJk98K/"
+          <a         
+            href="https://www.facebook.com/share/1FAFzQL2hh/"
             target="_blank"
             className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-base md:text-lg"
             data-th="ติดต่อผ่าน Facebook" data-en="Contact on Facebook"
