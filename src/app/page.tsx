@@ -55,7 +55,8 @@ export default function Home() {
           {/* โลโก้ + ชื่อบริษัท */}
           <div className="flex items-center gap-4 shrink-0">
             <img src="/images/logo_van.png" alt="Van Logo" className="h-14 md:h-19" />
-            <span className="text-lg md:text-xl font-bold tracking-wide">Khong Van Transport</span>
+            <span className="text-lg md:text-xl font-bold tracking-wide">Khong Van 
+            </span>
           </div>
 
           {/* เมนูด้านขวา + ปุ่มภาษา */}
@@ -79,11 +80,11 @@ export default function Home() {
       {/* Hero Section */}
       <section
         className="relative bg-cover bg-center pt-32 pb-20"
-        style={{ backgroundImage: "url('/images/van/van_all.jpg')" }}
+        style={{ backgroundImage: "url('./images/van/Van_all.jpg')" }}
       >
         <div className="w-full min-h-[400px] bg-black/40 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="font-comfortaa text-5xl md:text-6xl font-bold mb-4">
-            Khong Van Transport
+            Khong Van
           </h1>
           <p className="font-kanit text-xl md:text-2xl font-normal" data-th="บริการรถตู้ VIP พร้อมคนขับส่วนตัว เดินทางทั่วไทย" data-en="VIP van service with private driver, traveling all over Thailand">
             บริการรถตู้ VIP พร้อมคนขับส่วนตัว เดินทางทั่วไทย
@@ -103,7 +104,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 bg-blue-50">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="font-kanit text-4xl font-bold mb-6 text-gray-900">บริการของเรา</h2>
+          <h2 className="font-kanit text-4xl font-bold mb-6 text-gray-900" data-th="บริการของเรา" data-en="Our Services">บริการของเรา</h2>
           <p className="font-kanit text-lg text-gray-700 leading-relaxed text-justify-center max-w-3xl mx-auto" data-th="บริการรถตู้ VIP รุ่นใหม่ที่สะอาด สะดวกสบาย พร้อมพนักงานขับรถที่สุภาพ เรียบร้อย ขับขี่อย่างนุ่มนวล งดสูบบุหรี่และดื่มแอลกอฮอล์ขณะปฏิบัติงาน โดยมุ่งเน้นความปลอดภัยและความพึงพอใจของผู้โดยสารเป็นหลัก" data-en="Our new VIP vans are clean, comfortable, and driven by polite and professional drivers. We ensure a smooth ride without smoking or alcohol consumption during work hours, focusing on passenger safety and satisfaction.">
             บริการรถตู้ VIP รุ่นใหม่ที่สะอาด สะดวกสบาย พร้อมพนักงานขับรถที่สุภาพ เรียบร้อย ขับขี่อย่างนุ่มนวล งดสูบบุหรี่และดื่มแอลกอฮอล์ขณะปฏิบัติงาน โดยมุ่งเน้นความปลอดภัยและความพึงพอใจของผู้โดยสารเป็นหลัก
           </p>
@@ -151,9 +152,23 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 grid gap-6 text-center md:text-left md:grid-cols-3">
           {/* Section: Company Info */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-2">Khong Van Transport</h3>
-            <p>32/49 ต.ในเมือง อ.เมือง จ.ขอนแก่น 40000</p>
-            <p>โทรศัพท์: <a href="tel:0616916888" className="hover:text-white">061-691-6888</a></p>
+            <h3 className="text-white font-semibold text-lg mb-2">Khong Van </h3>
+            <p
+              data-th="32/49 ต.ในเมือง อ.เมือง จ.ขอนแก่น 40000"
+              data-en="32/49 Nai Mueang Subdistrict, Mueang Khon Kaen District, Khon Kaen 40000, Thailand"
+            >
+              32/49 ต.ในเมือง อ.เมือง จ.ขอนแก่น 40000
+            </p>
+
+            <p>
+              <span
+                data-th="โทรศัพท์:"
+                data-en="Phone:"
+              >
+                โทรศัพท์:
+              </span>{" "}
+              <a href="tel:0616916888" className="hover:text-white">061-691-6888</a>
+            </p>
           </div>
 
           {/* Section: Social */}
@@ -179,7 +194,7 @@ export default function Home() {
 
           {/* Section: Copyright */}
           <div className="md:col-span-3 border-t border-gray-700 pt-6 text-center text-gray-500 text-xs">
-            © 2025 Khong Van Transport. All rights reserved.
+            © 2025 Khong Van. All rights reserved.
           </div>
         </div>
       </footer>

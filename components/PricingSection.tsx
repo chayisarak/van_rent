@@ -5,8 +5,8 @@ export default function PricingSection() {
   return (
     <section id="pricing" className="bg-white py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-center font-kanit text-3xl font-bold text-blue-800 mb-10" data-th="💰 อัตราค่าบริการ" data-en="💰 Price">
-          💰 อัตราค่าบริการ
+        <h2 className="text-center font-kanit text-3xl font-bold text-blue-800 mb-10" data-th="อัตราค่าบริการ" data-en="Price">
+          อัตราค่าบริการ
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 font-kanit text-lg">
@@ -26,7 +26,7 @@ export default function PricingSection() {
               
               <li>
                 <span data-th="ระยะเวลาให้บริการ" data-en="Service duration"></span>
-                <span data-th="สูงสุด" data-en="Up to"></span>
+                <span data-th="สูงสุด" data-en=" Up to"></span>
                 <span className="font-bold text-red-600"> 10–12 </span>
                 <span data-th="ชั่วโมงต่อวัน" data-en="hours per day"></span>
               </li>
@@ -61,7 +61,7 @@ export default function PricingSection() {
               </li>
 
               <li>
-                <span data-th="*ราคาดังกล่าว" data-en="*The above price"></span>
+                <span data-th="*ราคาดังกล่าว" data-en="The above price"></span>
                 <strong data-th="ไม่รวม" data-en=" does not include "></strong>
                 <span data-th="ค่าน้ำมันและค่าทางด่วน" data-en="fuel and toll fees"></span>
               </li>

@@ -41,3 +41,108 @@ body {
   min-height: 100vh;
   transition: background 0.5s;
 }
+:root {
+  /* Base */
+  --bg: #F8FAFC;            /* Cloud */
+  --fg: #0F172A;            /* Ink */
+  --muted: #64748B;         /* Slate */
+  --ring: #8B5CF6;          /* Focus ring */
+
+  /* Brand Pops */
+  --brand: #2563EB;         /* Pop Blue */
+  --brand-2: #8B5CF6;       /* Lilac */
+  --brand-3: #F43F5E;       /* Candy Pink */
+  --brand-4: #F59E0B;       /* Citrus */
+  --brand-5: #10B981;       /* Mint */
+  --brand-6: #22D3EE;       /* Sky */
+
+  /* Surfaces */
+  --card: #ffffff;
+  --card-muted: #ffffffcc;
+  --border: #E2E8F0;
+
+  /* Typography */
+  --heading: var(--fg);
+  --body: #0f172acc;
+  --subtle: #0f172a99;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(2, 8, 23, 0.06);
+  --shadow-md: 0 8px 24px rgba(2, 8, 23, 0.08);
+  --shadow-lg: 0 14px 40px rgba(2, 8, 23, 0.10);
+}
+
+:root.dark, [data-theme="dark"] {
+  --bg: #0B1020;           /* Noir */
+  --fg: #E5E7EB;           /* Mist */
+  --muted: #9CA3AF;
+  --ring: #A78BFA;
+
+  --card: #0f172acc;
+  --card-muted: #0f172a99;
+  --border: #1F2937;
+
+  --heading: var(--fg);
+  --body: #e5e7ebd9;
+  --subtle: #e5e7eb99;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Page background with elegant pop (light) */
+body {
+  background:
+    radial-gradient(60rem 60rem at 85% 15%, color-mix(in oklab, var(--brand-6) 32%, transparent), transparent),
+    radial-gradient(55rem 55rem at 10% 90%, color-mix(in oklab, var(--brand-3) 30%, transparent), transparent),
+    linear-gradient(120deg, #fff, var(--bg) 50%, #fff);
+  color: var(--body);
+}
+
+/* Dark background */
+:root.dark body, [data-theme="dark"] body {
+  background:
+    radial-gradient(75rem 75rem at 82% 18%, color-mix(in oklab, var(--brand-2) 22%, transparent), transparent),
+    radial-gradient(70rem 70rem at 16% 85%, color-mix(in oklab, var(--brand-5) 22%, transparent), transparent),
+    linear-gradient(120deg, #060913, #0B1020 55%, #0E1528);
+  color: var(--body);
+}
+
+/* Utilities */
+.border-theme   { border-color: var(--border); }
+.card-surface   { background: var(--card); box-shadow: var(--shadow-md); }
+.card-muted     { background: var(--card-muted); backdrop-filter: blur(6px); }
+.heading        { color: var(--heading); }
+.subtle         { color: var(--subtle); }
+
+.btn-brand {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+}
+.btn-brand:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.btn-brand:active { transform: translateY(0); filter: brightness(.95); }
+
+.badge-pop {
+  background: linear-gradient(135deg, color-mix(in oklab, var(--brand-3) 75%, white), color-mix(in oklab, var(--brand-4) 65%, white));
+  color: #111827;
+  border-radius: 999px;
+  padding: .25rem .6rem;
+  font-weight: 600;
+}
+
+/* Focus ring */
+:where(button, a, input, select, textarea):focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--ring) 80%, white);
+  outline-offset: 2px;
+  border-radius: .75rem;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn-brand { transition: none; }
+}
