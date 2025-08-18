@@ -75,14 +75,14 @@ export default function PricingSection() {
               </li>
               <li>
                 <span data-th="กรณีเกินเวลาที่กำหนด คิดค่าบริการเพิ่มเติม" data-en="In case of overtime, an additional fee applies"></span>
-                <span className="text-blue-700"> 200 </span>
+                <span className="text-blue-700"> 500 </span>
                 <span data-th="บาทต่อชั่วโมง" data-en="THB per hour"></span>
               </li>
 
               <li>
                 <span data-th="หากไม่ได้จัดเตรียมที่พักสำหรับพนักงานขับรถ ขอความกรุณาชำระ" data-en="If accommodation is not provided for the driver, please pay"></span>
                 <span data-th="ค่าที่พัก" data-en="accommodation fee"></span>
-                <span className="text-blue-700"> 500 </span>
+                <span className="text-blue-700"> 600 </span>
                 <span data-th="บาทต่อคืน" data-en="THB per night"></span>
 
               </li>
