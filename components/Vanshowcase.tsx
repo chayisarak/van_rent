@@ -218,7 +218,7 @@ const vans: Van[] = [
     name: "Toyota Commuter VIP",
     type: "Commuter VIP",
     typeEn: "Commuter VIP",
-    image: "/images/van/commuter.jpg",
+    image: "/images/van/commutervip.jpg",
     gallery: [
       "/images/van/commutervip1.jpg",
       "/images/van/commutervip2.jpg",
