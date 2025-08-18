@@ -54,7 +54,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* โลโก้ + ชื่อบริษัท */}
           <div className="flex items-center gap-4 shrink-0">
-            <img src="/images/logo_van1.png" alt="Van Logo" className="h-14 md:h-19" />
+            <img src="/images/logo_van1.PNG" alt="Van Logo" className="h-14 md:h-19" />
             <span className="text-lg md:text-xl font-bold tracking-wide">Khong Van 
             </span>
           </div>
