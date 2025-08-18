@@ -78,28 +78,41 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section
-        className="relative bg-cover bg-center pt-32 pb-20"
-        style={{ backgroundImage: "url('./images/van/Van_all.jpg')" }}
+      <section className="relative pt-32 pb-20">
+  <img
+    src="/images/van/Van_all.jpg"
+    alt="Van All"
+    className="absolute inset-0 w-full h-full object-cover z-0"
+    style={{ opacity: 0.5 }}
+  />
+  <div className="relative z-10 w-full min-h-[400px] bg-black/40 flex flex-col items-center justify-center text-center text-white px-4">
+    <h1
+      className="font-comfortaa text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg"
+      style={{ textShadow: "2px 2px 8px rgba(150, 148, 148, 0.7)" }}
+    >
+      Khong Van
+    </h1>
+    <p
+      className="font-kanit text-xl md:text-2xl font-normal mb-2 drop-shadow-lg"
+      style={{ textShadow: "1px 1px 6px rgba(150, 148, 148, 0.7)" }}
+      data-th="บริการรถตู้ VIP พร้อมคนขับส่วนตัว เดินทางทั่วไทย"
+      data-en="VIP van service with private driver, traveling all over Thailand"
+    >
+      บริการรถตู้ VIP พร้อมคนขับส่วนตัว เดินทางทั่วไทย
+    </p>
+    <div className="mt-6 flex gap-4">
+      <a
+        href="#contact"
+        className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl text-white text-sm md:text-base font-kanit drop-shadow-lg"
+        data-th="ติดต่อเรา"
+        data-en="Contact Us"
+        style={{ textShadow: "1px 1px 6px rgba(150, 148, 148, 0.7)" }}
       >
-        <div className="w-full min-h-[400px] bg-black/40 flex flex-col items-center justify-center text-center text-white px-4">
-          <h1 className="font-comfortaa text-5xl md:text-6xl font-bold mb-4">
-            Khong Van
-          </h1>
-          <p className="font-kanit text-xl md:text-2xl font-normal" data-th="บริการรถตู้ VIP พร้อมคนขับส่วนตัว เดินทางทั่วไทย" data-en="VIP van service with private driver, traveling all over Thailand">
-            บริการรถตู้ VIP พร้อมคนขับส่วนตัว เดินทางทั่วไทย
-          </p>
-          <div className="mt-6 flex gap-4">
-            <a
-              href="#contact"
-              className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl text-white text-sm md:text-base font-kanit"
-              data-th="ติดต่อเรา" data-en="Contact Us"
-            >
-              ติดต่อเรา
-            </a>
-          </div>
-        </div>
-      </section>
+        ติดต่อเรา
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* About Section */}
       <section id="about" className="py-20 bg-blue-50">
